@@ -163,13 +163,9 @@ nav {
     z-index: 2;
 }
 
-.nav-top {
-    margin-bottom: 2rem;
-}
-
 .nav-links ul {
     list-style: none;
-    padding: 2rem 0 0 0;
+    padding: 1rem 0 0 0;
 }
 
 .nav-links a {
