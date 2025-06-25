@@ -96,7 +96,7 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 .content-container {
@@ -120,9 +120,11 @@ html {
 
 .main-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     /* grid-template-rows: auto 1fr; */
     height: 100%;
+    padding: 1rem;
+    padding-top: 0;
 }
 
 /* .main-content {
@@ -299,7 +301,7 @@ p {
 }
 
 .main-content {
-    margin: 1rem;
+    
     overflow: auto;
     flex: 2;
     display: grid;
@@ -314,6 +316,7 @@ p {
     /* background-color: #444; */
     text-align: left;
     padding: .5rem;
+    padding-left: 0;
     color: #ddd;
     font-family: var(--font-family);
     font-size: 1.5rem;
@@ -348,11 +351,6 @@ p {
     color: #4a5568;
 }
 
-.sidebar {
-    background-color: #4a5568;
-    margin: 1rem;
-}
-
 .card .card-actions {
     display: flex;
     gap: 18px;
@@ -360,4 +358,79 @@ p {
     color: #000000;
     font-size: 1.2rem;
     justify-content: end;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 1rem;
+    margin-left: 0;
+    padding-top: 1.3rem;
+    font-family: var(--font-family);
+}
+
+.announcements,
+.trending {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.announcements h4,
+.trending h4 {
+    margin: 0 0 12px 0;
+    font-size: 1.08em;
+    font-weight: bold;
+    color: #333;
+}
+
+.announcement-item {
+    margin-bottom: 12px;
+}
+
+
+.announcement-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 3px;
+}
+
+.announcement-text {
+    font-size: 0.97em;
+    color: #666;
+}
+
+.trending-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.trending-user:last-child {
+    margin-bottom: 0;
+}
+
+.trending-user .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #eee;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 1.1em;
+}
+
+.trending-user .username {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.trending-user .project {
+    color: #888;
+    font-size: 0.98em;
 }
